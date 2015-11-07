@@ -22,6 +22,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact us</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -64,9 +65,19 @@
 					<a href="#" class="btn btn-default">View project</a>
 				</div>
 			</section>
+
+			<section class="row">
+				<div class="page-header text-center" id="open-source">
+				  <h1>Open source stuff</h1>
+				</div>
+			  <div id="open-source-content">
+					<p class="text-center">Loading ....</p>
+			  </div>
+			</section>
+			
 			<br>
 			<br>
-			<footer class="row">
+			<footer class="row" id="contact">
 				<div class="page-header text-center">
 				  <h1>Contact form</h1>
 				</div>
@@ -74,20 +85,21 @@
 				<form class="col-sm-4" id="contact-form" action="/" method="post">
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">Email address</label>
-				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
 				  </div>
 				  <div class="form-group">
 				    <label for="exampleInputPassword1">Full name</label>
-				    <input type="text" name="fullname" class="form-control" id="exampleFullName" placeholder="Full name">
+				    <input type="text" name="fullname" class="form-control" id="exampleFullName" placeholder="Full name" required>
 				  </div>
-				  <button type="submit" class="btn btn-default">Submit</button>
+				  <button type="submit" class="btn btn-default center-block">Submit</button>
 				</form>
 				<div class="col-sm-4"></div>
 			</footer>
 		</div>
 		<script src="vendor/jquery-1.11.3.js"></script>
-		<script src="js/main.js"></script>
 		<script src="vendor/bootstrap-3.3.5/js/bootstrap.js"></script>
+		<script src="vendor/jquery-validate-1.14.0.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
 
