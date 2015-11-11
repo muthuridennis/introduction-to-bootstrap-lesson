@@ -73,7 +73,14 @@ $(document).ready(function() {
 		// 				  						+ '</ul>';
 
 		$('#open-source-content').html(projectListTemplate);
-	})
+	});
+
+	nodeServerUrl = 'http://127.0.0.1:8081';
+	dataHandler = function(data){
+		console.log(data);
+	};
+
+	$.get(nodeServerUrl, dataHandler)
 
 
 

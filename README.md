@@ -23,7 +23,7 @@
 - name(repository name)
 - html_url(repository link)
 - teams_url(link to teams working on the repository)
-
+- description
 
 
 
